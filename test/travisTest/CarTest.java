@@ -16,6 +16,9 @@ public class CarTest {
 	public void testGetNo_S001() {
 		assertEquals(car.getNo(),"わ 123-456");	
 	}
+	/**
+	 * エラーケースを見たい場合は，以下のコメントアウトを外す
+	 */
 	@Test
 	public void testGetNo_S002() {
 		//assertEquals(car.getNo(),"error no");	

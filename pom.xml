@@ -1,13 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>travisTest2</groupId>
-	<artifactId>travisTest2</artifactId>
+	<groupId>travisTest</groupId>
+	<artifactId>travisTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>travisTest2</name>
+	<name>travisTest</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
+		<sourceDirectory>${basedir}/src</sourceDirectory>
+		<testSourceDirectory>${basedir}/test</testSourceDirectory>
+		<outputDirectory>${basedir}/target/classes</outputDirectory>
+		<testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
+		<directory>${basedir}/target</directory>
 		<plugins>
 			<plugin>
 			 <groupId>org.apache.maven.plugins</groupId>
@@ -17,7 +22,14 @@
 			 	<source>1.7</source>
 			 	<target>1.7</target>
 			 </configuration>
-		</plugin>
-	</plugins>
-</build>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<version>4.11</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
 </project>
