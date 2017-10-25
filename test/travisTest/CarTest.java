@@ -21,6 +21,6 @@ public class CarTest {
 	 */
 	@Test
 	public void testGetNo_S002() {
-		//assertEquals(car.getNo(),"error no");	
+		//assertEquals(car.getNo(),"a");	
 	}
 }
